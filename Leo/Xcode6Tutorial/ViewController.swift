@@ -14,18 +14,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondCardImageView: UIImageView!
     @IBOutlet weak var playRoundButton: UIButton!
     @IBOutlet weak var backgroundImageView: UIImageView!
-    
-    
     @IBOutlet weak var PlayerScore: UILabel!
     @IBOutlet weak var EnemyScore: UILabel!
     
+    @IBOutlet weak var viewFinal: UIView!
     
     var cardNamesArray:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        viewFinal.hidden = true
         //self.playRoundButton.setTitle("Play", forState: UIControlState.Normal)
     }
 
@@ -79,6 +78,12 @@ class ViewController: UIViewController {
         else {
             enemyScoreTotal += 1
             self.EnemyScore.text = String (enemyScoreTotal)
+        }
+        if(enemyScoreTotal == 10 || playerScoreTotal == 10)
+        {
+            NSLog("Teste")
+            viewFinal.hidden = false
+
         }
     }
 
