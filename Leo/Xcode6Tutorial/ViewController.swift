@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+
+class ViewController: UIViewController {
+    
+
+    //@IBOutlet weak var setaDireita: UIButton!
     @IBOutlet weak var firstCardImageView: UIImageView!
     @IBOutlet weak var secondCardImageView: UIImageView!
     @IBOutlet weak var playRoundButton: UIButton!
@@ -18,6 +22,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var EnemyScore: UILabel!
     
     @IBOutlet weak var viewFinal: UIView!
+    
+    var timesMenu:[String] = ["Cor", "Sp", "San", "Pal"]
     
     var cardNamesArray:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
     
