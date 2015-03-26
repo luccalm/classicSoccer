@@ -72,7 +72,7 @@ class ViewController: UIViewController {
     @IBAction func botaoSair(sender: AnyObject) {
         exit(0);
     }
-    s
+    
     @IBAction func playRoundTapped(sender: UIButton) {
         
         
