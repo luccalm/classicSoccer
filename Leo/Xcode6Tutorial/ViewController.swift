@@ -20,12 +20,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var PlayerScore: UILabel!
     @IBOutlet weak var EnemyScore: UILabel!
+    @IBOutlet weak var timeVencedor: UILabel!
     
     @IBOutlet weak var viewFinal: UIView!
+    @IBOutlet weak var notaJogarNovamente: UIView!
     
-    @IBOutlet weak var notaDeFIM: UIView!
     
-    @IBOutlet weak var trofeuFim: UIImageView!
     
     var cardNamesArray:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
     
@@ -113,17 +113,23 @@ class ViewController: UIViewController {
         }
         if(enemyScoreTotal == 10)
         {
-            notaDeFIM.hidden = false
-            //NSLog("Teste")
+            
+            NSLog("TesteEnemy")
+            timeVencedor.text = "O time adversário ganhou!"
             viewFinal.hidden = false
+            notaJogarNovamente.hidden = false
+            
+            
             
 
         }
         
         if(playerScoreTotal == 10){
-            notaDeFIM.hidden = false
-            //NSLog("Teste")
+            
+            NSLog("TesteScorePlayer")
+            timeVencedor.text = "Você ganhou!"
             viewFinal.hidden = false
+            notaJogarNovamente.hidden = false
         }
     }
 
