@@ -9,6 +9,9 @@
 import UIKit
 
 
+struct selecionarTime {
+    static var timeEscolha = 0
+}
 
 
 class SelecaoTimes: UIViewController {
@@ -22,11 +25,13 @@ class SelecaoTimes: UIViewController {
     var i:Int = 0
     
     @IBAction func cliqueDireita(sender: AnyObject) {
-        print(" TESTE ")
+
+        selecionarTime.timeEscolha++;
+        i++;
         
-        
-        if (i > (0)){
-            i--
+        if (i > 3){
+            i = 0
+            selecionarTime.timeEscolha = 0
         }
         
          var nomeTimesString:String = self.nomeTimesArray [i]
@@ -38,28 +43,33 @@ class SelecaoTimes: UIViewController {
         
         self.nomeTimes.text = String(nomeTimesArray[i])
         
+        print(selecionarTime.timeEscolha);
+        
     }
-
-    
-    
-    
     
     @IBAction func ciqueEsquerda(sender: AnyObject) {
-    
-        print(" ESQUERDA ")
-            
-            
-            if (i<3){
-                i++
+
+        selecionarTime.timeEscolha--;
+        i--
+
+            if (i == -1){
+                i = 3
+                selecionarTime.timeEscolha = 3
             }
     
         var nomeTimesString:String = self.nomeTimesArray [i]
         
         var timeAEscolher:String = self.timesMenu[i]
-    
+        
+        
         self.timesAEscolher.image = UIImage(named:timeAEscolher)
         
         self.nomeTimes.text = String(nomeTimesArray[i])
         
+        print(selecionarTime.timeEscolha)
+        
     }
+            
 }
+
+

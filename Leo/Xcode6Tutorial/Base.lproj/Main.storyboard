@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2jq-QE-OVd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2jq-QE-OVd">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -535,10 +535,10 @@
                                             <mask key="constraints">
                                                 <exclude reference="CIh-TH-h69"/>
                                                 <exclude reference="zQu-J9-Us7"/>
-                                                <exclude reference="LSI-vL-wm3"/>
-                                                <exclude reference="Paa-2V-Tme"/>
                                                 <exclude reference="G9V-pd-dcB"/>
                                                 <exclude reference="MPU-dS-h5m"/>
+                                                <exclude reference="LSI-vL-wm3"/>
+                                                <exclude reference="Paa-2V-Tme"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
@@ -549,10 +549,10 @@
                                             <mask key="constraints">
                                                 <include reference="CIh-TH-h69"/>
                                                 <include reference="zQu-J9-Us7"/>
-                                                <include reference="LSI-vL-wm3"/>
-                                                <include reference="Paa-2V-Tme"/>
                                                 <include reference="G9V-pd-dcB"/>
                                                 <include reference="MPU-dS-h5m"/>
+                                                <include reference="LSI-vL-wm3"/>
+                                                <include reference="Paa-2V-Tme"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -580,14 +580,14 @@
                                     <mask key="constraints">
                                         <exclude reference="1YF-zF-j1h"/>
                                         <exclude reference="7ah-Qf-pb3"/>
-                                        <exclude reference="UHI-uj-58h"/>
-                                        <exclude reference="ma4-Od-05c"/>
-                                        <exclude reference="W9b-fY-Rgh"/>
-                                        <exclude reference="zPo-Yl-hMS"/>
                                         <exclude reference="qfy-ep-8Ez"/>
                                         <exclude reference="qxc-gh-TjF"/>
                                         <exclude reference="tDr-a4-bVD"/>
                                         <exclude reference="wtf-FM-N4D"/>
+                                        <exclude reference="UHI-uj-58h"/>
+                                        <exclude reference="ma4-Od-05c"/>
+                                        <exclude reference="W9b-fY-Rgh"/>
+                                        <exclude reference="zPo-Yl-hMS"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
@@ -599,14 +599,14 @@
                                     <mask key="constraints">
                                         <include reference="1YF-zF-j1h"/>
                                         <include reference="7ah-Qf-pb3"/>
-                                        <include reference="UHI-uj-58h"/>
-                                        <include reference="ma4-Od-05c"/>
-                                        <include reference="W9b-fY-Rgh"/>
-                                        <include reference="zPo-Yl-hMS"/>
                                         <include reference="qfy-ep-8Ez"/>
                                         <include reference="qxc-gh-TjF"/>
                                         <include reference="tDr-a4-bVD"/>
                                         <include reference="wtf-FM-N4D"/>
+                                        <include reference="UHI-uj-58h"/>
+                                        <include reference="ma4-Od-05c"/>
+                                        <include reference="W9b-fY-Rgh"/>
+                                        <include reference="zPo-Yl-hMS"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -833,14 +833,16 @@
                                 <exclude reference="Sr5-xQ-Vt4"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Ahr-B6-nDp"/>
-                                <exclude reference="ivJ-KH-lOc"/>
                                 <exclude reference="afg-53-Nee"/>
                                 <exclude reference="qGx-Vz-gcC"/>
                                 <exclude reference="t4l-fo-Twy"/>
                                 <exclude reference="2fk-iZ-a93"/>
                                 <exclude reference="lAI-ND-imN"/>
                                 <exclude reference="oCM-cE-dyE"/>
+                                <exclude reference="VAo-8p-EWa"/>
+                                <exclude reference="kuS-ay-RcP"/>
+                                <exclude reference="Ahr-B6-nDp"/>
+                                <exclude reference="ivJ-KH-lOc"/>
                                 <exclude reference="RQG-AY-N5L"/>
                                 <exclude reference="fZK-Ir-Lhd"/>
                                 <exclude reference="BTA-gY-J8H"/>
@@ -848,8 +850,6 @@
                                 <exclude reference="a3q-Ho-uUi"/>
                                 <exclude reference="dIY-qB-W3W"/>
                                 <exclude reference="od4-OJ-8SH"/>
-                                <exclude reference="VAo-8p-EWa"/>
-                                <exclude reference="kuS-ay-RcP"/>
                                 <exclude reference="X3j-EH-c9M"/>
                                 <exclude reference="fLB-fo-3z5"/>
                                 <exclude reference="zNA-90-t8f"/>
@@ -871,13 +871,13 @@
                                 <include reference="2fk-iZ-a93"/>
                                 <include reference="lAI-ND-imN"/>
                                 <include reference="oCM-cE-dyE"/>
+                                <include reference="VAo-8p-EWa"/>
+                                <include reference="kuS-ay-RcP"/>
                                 <include reference="RQG-AY-N5L"/>
                                 <include reference="fZK-Ir-Lhd"/>
                                 <include reference="BTA-gY-J8H"/>
                                 <include reference="OIT-wB-Kso"/>
                                 <include reference="od4-OJ-8SH"/>
-                                <include reference="VAo-8p-EWa"/>
-                                <include reference="kuS-ay-RcP"/>
                                 <include reference="X3j-EH-c9M"/>
                                 <include reference="fLB-fo-3z5"/>
                                 <include reference="zNA-90-t8f"/>
@@ -920,6 +920,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Yia-Ve-BRv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gVh-o9-gv9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

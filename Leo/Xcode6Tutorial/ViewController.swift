@@ -36,7 +36,25 @@ class ViewController: UIViewController {
         //viewFinal.hidden = true
         //notaDeFIM.hidden = true
         
+        if(selecionarTime.timeEscolha == 0) {
+            print("Corinthians");
+        }
+        
+        else if(selecionarTime.timeEscolha == 1) {
+            print("Sao Paulo");
+        }
+        
+        else if(selecionarTime.timeEscolha == 2) {
+            print("Santos")
+        }
+        else if(selecionarTime.timeEscolha == 3) {
+            print("Palmeiras")
+        }
+        
+        
         //self.playRoundButton.setTitle("Play", forState: UIControlState.Normal)
+    
+
     }
 
 
@@ -44,11 +62,6 @@ class ViewController: UIViewController {
     var playerScoreTotal = 0;
     var enemyScoreTotal = 0;
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     @IBAction func playRoundTapped(sender: UIButton) {
         
         
