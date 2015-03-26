@@ -25,7 +25,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewFinal: UIView!
     @IBOutlet weak var notaJogarNovamente: UIView!
     
-    
+    @IBOutlet weak var powerOne: UILabel!
+    @IBOutlet weak var powerTwo: UILabel!
     
     var cardNamesArray:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
     
