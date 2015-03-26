@@ -12,7 +12,6 @@ import UIKit
 class SelecaoTimes: UIViewController {
 
     @IBAction func cliqueDireita(sender: AnyObject) {
-        
         print("TESTE")
     }
         
