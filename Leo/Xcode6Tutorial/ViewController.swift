@@ -7,13 +7,13 @@
 //
 
 import UIKit
-
-
+import Darwin
 
 class ViewController: UIViewController {
     
 
     //@IBOutlet weak var setaDireita: UIButton!
+    @IBOutlet weak var botaoSair: UIButton!
     @IBOutlet weak var firstCardImageView: UIImageView!
     @IBOutlet weak var secondCardImageView: UIImageView!
     @IBOutlet weak var playRoundButton: UIButton!
@@ -69,6 +69,10 @@ class ViewController: UIViewController {
     var playerScoreTotal = 0;
     var enemyScoreTotal = 0;
     
+    @IBAction func botaoSair(sender: AnyObject) {
+        exit(0);
+    }
+    s
     @IBAction func playRoundTapped(sender: UIButton) {
         
         

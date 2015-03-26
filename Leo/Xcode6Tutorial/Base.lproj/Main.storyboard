@@ -701,13 +701,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Vencedor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuk-Yi-hcv">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jogar novamente?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ee-LU-V2x">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wy5-MP-ylt" userLabel="SIM">
@@ -724,6 +724,9 @@
                                         <state key="normal" title="Button">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="botaoSair:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9vd-Cu-cF1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -767,10 +770,10 @@
                                         <exclude reference="ri9-hY-Nxb"/>
                                         <exclude reference="Azq-cI-Yba"/>
                                         <exclude reference="YMw-rE-f7H"/>
-                                        <exclude reference="4cP-Le-gHC"/>
-                                        <exclude reference="8ZG-1X-YXq"/>
                                         <exclude reference="L9R-IZ-vqE"/>
                                         <exclude reference="Zjq-lU-NSH"/>
+                                        <exclude reference="4cP-Le-gHC"/>
+                                        <exclude reference="8ZG-1X-YXq"/>
                                         <exclude reference="Nq9-tH-Qty"/>
                                         <exclude reference="gpb-Fg-xBd"/>
                                     </mask>
@@ -787,10 +790,10 @@
                                         <include reference="ri9-hY-Nxb"/>
                                         <include reference="Azq-cI-Yba"/>
                                         <include reference="YMw-rE-f7H"/>
-                                        <include reference="4cP-Le-gHC"/>
-                                        <include reference="8ZG-1X-YXq"/>
                                         <include reference="L9R-IZ-vqE"/>
                                         <include reference="Zjq-lU-NSH"/>
+                                        <include reference="4cP-Le-gHC"/>
+                                        <include reference="8ZG-1X-YXq"/>
                                         <include reference="Nq9-tH-Qty"/>
                                         <include reference="gpb-Fg-xBd"/>
                                     </mask>
@@ -842,17 +845,17 @@
                                 <exclude reference="2fk-iZ-a93"/>
                                 <exclude reference="lAI-ND-imN"/>
                                 <exclude reference="oCM-cE-dyE"/>
+                                <exclude reference="VAo-8p-EWa"/>
+                                <exclude reference="kuS-ay-RcP"/>
                                 <exclude reference="hnF-L1-ItY"/>
                                 <exclude reference="pAx-vo-uwh"/>
+                                <exclude reference="o0h-Rf-08F"/>
+                                <exclude reference="vmf-mQ-TiI"/>
                                 <exclude reference="BTA-gY-J8H"/>
                                 <exclude reference="OIT-wB-Kso"/>
                                 <exclude reference="a3q-Ho-uUi"/>
                                 <exclude reference="dIY-qB-W3W"/>
                                 <exclude reference="od4-OJ-8SH"/>
-                                <exclude reference="o0h-Rf-08F"/>
-                                <exclude reference="vmf-mQ-TiI"/>
-                                <exclude reference="VAo-8p-EWa"/>
-                                <exclude reference="kuS-ay-RcP"/>
                                 <exclude reference="X3j-EH-c9M"/>
                                 <exclude reference="fLB-fo-3z5"/>
                                 <exclude reference="zNA-90-t8f"/>
@@ -875,15 +878,15 @@
                                 <include reference="2fk-iZ-a93"/>
                                 <include reference="lAI-ND-imN"/>
                                 <include reference="oCM-cE-dyE"/>
+                                <include reference="VAo-8p-EWa"/>
+                                <include reference="kuS-ay-RcP"/>
                                 <include reference="hnF-L1-ItY"/>
                                 <include reference="pAx-vo-uwh"/>
+                                <include reference="o0h-Rf-08F"/>
+                                <include reference="vmf-mQ-TiI"/>
                                 <include reference="BTA-gY-J8H"/>
                                 <include reference="OIT-wB-Kso"/>
                                 <include reference="od4-OJ-8SH"/>
-                                <include reference="o0h-Rf-08F"/>
-                                <include reference="vmf-mQ-TiI"/>
-                                <include reference="VAo-8p-EWa"/>
-                                <include reference="kuS-ay-RcP"/>
                                 <include reference="X3j-EH-c9M"/>
                                 <include reference="fLB-fo-3z5"/>
                                 <include reference="zNA-90-t8f"/>
@@ -900,6 +903,7 @@
                         <outlet property="EnemyScore" destination="Vhr-os-GaL" id="XYD-fa-Z1R"/>
                         <outlet property="PlayerScore" destination="MNE-FP-Iq2" id="8Na-hd-ZPQ"/>
                         <outlet property="backgroundImageView" destination="G5w-g7-8wj" id="RfV-Nd-eeL"/>
+                        <outlet property="botaoSair" destination="YfC-Rs-4O5" id="vlo-AX-cBj"/>
                         <outlet property="firstCardImageView" destination="W0x-0p-yFP" id="dmM-Ss-HYx"/>
                         <outlet property="notaJogarNovamente" destination="Sr5-xQ-Vt4" id="8i4-Ge-kZQ"/>
                         <outlet property="playRoundButton" destination="pdl-jC-MOY" id="Zzn-bd-hFd"/>
