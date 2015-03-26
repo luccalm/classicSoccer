@@ -11,17 +11,32 @@ import UIKit
 
 struct selecionarTime {
     static var timeEscolha = 0
+    static var playerScoreTotal = 0;
+    static var enemyScoreTotal = 0;
+    static var forcaCarta = 0;
+    static var nomeJogador = ""
 }
+
 
 
 class SelecaoTimes: UIViewController {
     @IBOutlet weak var ciqueDireita: UIButton!
     @IBOutlet weak var timesAEscolher: UIImageView!
     @IBOutlet weak var nomeTimes: UILabel!
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        NSLog("DidLoad Selecao")
+         selecionarTime.timeEscolha = 0
+         selecionarTime.playerScoreTotal = 0;
+         selecionarTime.enemyScoreTotal = 0;
+         selecionarTime.forcaCarta = 0;
+         selecionarTime.nomeJogador = ""
+    }
     
     var timesMenu:[String] = ["Cor", "SP", "San", "Pal"]
-    var nomeTimesArray:[String] = ["CORINTHIANS","SAO PAULO", "SANTOS", "PALMEIRAS"]
+    var nomeTimesArray:[String] = ["CORINTHIANS","SÃO PAULO", "SANTOS", "PALMEIRAS"]
     var i:Int = 0
     
     @IBAction func cliqueDireita(sender: AnyObject) {

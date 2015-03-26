@@ -25,14 +25,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewFinal: UIView!
     @IBOutlet weak var notaJogarNovamente: UIView!
     
+    @IBOutlet weak var viewParaAtributos: UIView!
     
+    @IBOutlet weak var forcaUm: UILabel!
+    @IBOutlet weak var forcaDois: UILabel!
     
     var cardNamesArray:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+               // Do any additional setup after loading the view, typically from a nib.
+        
+        self.PlayerScore.text = String(selecionarTime.playerScoreTotal)
+
+        self.EnemyScore.text = String (selecionarTime.enemyScoreTotal)
+
         //viewFinal.hidden = true
         //notaDeFIM.hidden = true
         
@@ -63,11 +71,6 @@ class ViewController: UIViewController {
     
 
     }
-
-
-    
-    var playerScoreTotal = 0;
-    var enemyScoreTotal = 0;
     
     @IBAction func botaoSair(sender: AnyObject) {
         exit(0);
@@ -78,6 +81,15 @@ class ViewController: UIViewController {
         
         // randomize um numero para o firstImageView
         var firstRandomNumber:Int = Int(arc4random_uniform(13))
+        
+
+        
+        var secondForca:Int = Int(70 + arc4random_uniform(30))
+        
+        forcaUm.text = String(format: "%i", selecionarTime.forcaCarta)
+        forcaDois.text = String(format: "%i", secondForca)
+
+
         
         //Controi uma string com numero randomico
         //var firstCardString:String = String(format: "Card%i", firstRandomNumber)
@@ -102,38 +114,41 @@ class ViewController: UIViewController {
         self.secondCardImageView.image = UIImage (named: secondCardString)
         
         //determina a carta maior
-        if firstRandomNumber > secondRandomNumber {
-            playerScoreTotal += 1
-            self.PlayerScore.text = String(playerScoreTotal)
+        if selecionarTime.forcaCarta > secondForca {
+            selecionarTime.playerScoreTotal += 1
+            self.PlayerScore.text = String(selecionarTime.playerScoreTotal)
             
             
         }
-        else if firstRandomNumber == secondRandomNumber {
+        else if selecionarTime.forcaCarta == secondForca {
         
         }
         else {
-            enemyScoreTotal += 1
-            self.EnemyScore.text = String (enemyScoreTotal)
+            selecionarTime.enemyScoreTotal += 1
+            self.EnemyScore.text = String (selecionarTime.enemyScoreTotal)
+            
         }
-        if(enemyScoreTotal == 10)
+        if(selecionarTime.enemyScoreTotal == 10)
         {
             
             NSLog("TesteEnemy")
             timeVencedor.text = "O time adversário ganhou!"
             viewFinal.hidden = false
             notaJogarNovamente.hidden = false
-            
-            
-            
-
+            viewParaAtributos.hidden = true
         }
         
-        if(playerScoreTotal == 10){
+        else if(selecionarTime.playerScoreTotal == 10){
             
             NSLog("TesteScorePlayer")
             timeVencedor.text = "Você ganhou!"
             viewFinal.hidden = false
             notaJogarNovamente.hidden = false
+            viewParaAtributos.hidden = true
+        }
+        else {
+        viewParaAtributos.hidden = false
+        
         }
     }
 

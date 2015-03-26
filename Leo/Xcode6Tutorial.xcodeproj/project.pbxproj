@@ -14,6 +14,7 @@
 		E2C9413C1AC11CCE009027B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C9413B1AC11CCE009027B8 /* Images.xcassets */; };
 		E2C9413F1AC11CCE009027B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2C9413D1AC11CCE009027B8 /* LaunchScreen.xib */; };
 		E2C9414B1AC11CCE009027B8 /* Xcode6TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C9414A1AC11CCE009027B8 /* Xcode6TutorialTests.swift */; };
+		E2F10D9F1AC4A126003EF8B4 /* EscolhaAtributos.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F10D9E1AC4A126003EF8B4 /* EscolhaAtributos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		E2C941441AC11CCE009027B8 /* Xcode6TutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Xcode6TutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C941491AC11CCE009027B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C9414A1AC11CCE009027B8 /* Xcode6TutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xcode6TutorialTests.swift; sourceTree = "<group>"; };
+		E2F10D9E1AC4A126003EF8B4 /* EscolhaAtributos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EscolhaAtributos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				E2C941361AC11CCE009027B8 /* ViewController.swift */,
 				E27CDB6B1AC35B0C0075DC97 /* SelecaoTimes.swift */,
 				E2C941381AC11CCE009027B8 /* Main.storyboard */,
+				E2F10D9E1AC4A126003EF8B4 /* EscolhaAtributos.swift */,
 				E2C9413B1AC11CCE009027B8 /* Images.xcassets */,
 				E2C9413D1AC11CCE009027B8 /* LaunchScreen.xib */,
 				E2C941321AC11CCE009027B8 /* Supporting Files */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2C941371AC11CCE009027B8 /* ViewController.swift in Sources */,
+				E2F10D9F1AC4A126003EF8B4 /* EscolhaAtributos.swift in Sources */,
 				E2C941351AC11CCE009027B8 /* AppDelegate.swift in Sources */,
 				E27CDB6C1AC35B0C0075DC97 /* SelecaoTimes.swift in Sources */,
 			);
