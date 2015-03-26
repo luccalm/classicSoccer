@@ -1047,6 +1047,8 @@
                         <outlet property="forcaUm" destination="Xhq-rm-AWO" id="pEK-R9-zPC"/>
                         <outlet property="notaJogarNovamente" destination="Sr5-xQ-Vt4" id="8i4-Ge-kZQ"/>
                         <outlet property="playRoundButton" destination="pdl-jC-MOY" id="Zzn-bd-hFd"/>
+                        <outlet property="powerOne" destination="Xhq-rm-AWO" id="VrY-OV-HS8"/>
+                        <outlet property="powerTwo" destination="P3C-en-h1C" id="bZE-ci-sRM"/>
                         <outlet property="secondCardImageView" destination="DZK-2T-Jda" id="wkn-MS-15R"/>
                         <outlet property="timeVencedor" destination="Fuk-Yi-hcv" id="ibo-ru-5YA"/>
                         <outlet property="viewFinal" destination="6rX-Ks-Dda" id="1O6-9k-Hpn"/>
