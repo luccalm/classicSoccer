@@ -23,17 +23,24 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var viewFinal: UIView!
     
-    var timesMenu:[String] = ["Cor", "Sp", "San", "Pal"]
+    @IBOutlet weak var notaDeFIM: UIView!
+    
+    @IBOutlet weak var trofeuFim: UIImageView!
     
     var cardNamesArray:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        viewFinal.hidden = true
+        
+        //viewFinal.hidden = true
+        //notaDeFIM.hidden = true
+        
         //self.playRoundButton.setTitle("Play", forState: UIControlState.Normal)
     }
 
+
+    
     var playerScoreTotal = 0;
     var enemyScoreTotal = 0;
     
@@ -58,8 +65,6 @@ class ViewController: UIViewController {
         self.firstCardImageView.image = UIImage (named: firstCardString)
         
         
-        
-        
         //randomize a number for secondCardView
         var secondRandomNumber:Int = Int (arc4random_uniform(13))
         
@@ -77,6 +82,7 @@ class ViewController: UIViewController {
             playerScoreTotal += 1
             self.PlayerScore.text = String(playerScoreTotal)
             
+            
         }
         else if firstRandomNumber == secondRandomNumber {
         
@@ -85,11 +91,19 @@ class ViewController: UIViewController {
             enemyScoreTotal += 1
             self.EnemyScore.text = String (enemyScoreTotal)
         }
-        if(enemyScoreTotal == 10 || playerScoreTotal == 10)
+        if(enemyScoreTotal == 10)
         {
-            NSLog("Teste")
+            notaDeFIM.hidden = false
+            //NSLog("Teste")
             viewFinal.hidden = false
+            
 
+        }
+        
+        if(playerScoreTotal == 10){
+            notaDeFIM.hidden = false
+            //NSLog("Teste")
+            viewFinal.hidden = false
         }
     }
 

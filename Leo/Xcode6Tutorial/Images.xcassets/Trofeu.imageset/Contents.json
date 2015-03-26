@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "Trofeu.png"
+      "filename" : "TrofeuTeste.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "Trofeu@2x.png"
+      "filename" : "TrofeuTeste@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "Trofeu@3x.png"
+      "filename" : "TrofeuTeste@3x.png"
     }
   ],
   "info" : {
