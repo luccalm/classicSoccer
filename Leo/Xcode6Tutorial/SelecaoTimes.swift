@@ -20,7 +20,7 @@ class SelecaoTimes: UIViewController {
     @IBOutlet weak var nomeTimes: UILabel!
 
     
-    var timesMenu:[String] = ["Cor", "Sp", "San", "Pal"]
+    var timesMenu:[String] = ["Cor", "SP", "San", "Pal"]
     var nomeTimesArray:[String] = ["CORINTHIANS","SAO PAULO", "SANTOS", "PALMEIRAS"]
     var i:Int = 0
     
