@@ -158,7 +158,7 @@ class ViewController: UIViewController {
             self.EnemyScore.text = String (selecionarTime.enemyScoreTotal)
             
         }
-        if(selecionarTime.enemyScoreTotal == 10)
+        if(selecionarTime.enemyScoreTotal == 3)
         {
             
             NSLog("TesteEnemy")
@@ -168,7 +168,7 @@ class ViewController: UIViewController {
             viewParaAtributos.hidden = true
         }
         
-        else if(selecionarTime.playerScoreTotal == 10){
+        else if(selecionarTime.playerScoreTotal == 3){
             
             NSLog("TesteScorePlayer")
             timeVencedor.text = "Você ganhou!"

@@ -17,6 +17,9 @@ class EscolhaAtributos: UIViewController {
     @IBOutlet weak var velocidadeLabel: UILabel!
     @IBOutlet weak var overrallLabel: UILabel!
     
+    @IBOutlet weak var selectionBox1: UIImageView!
+    @IBOutlet weak var selectionBox2: UIImageView!
+    @IBOutlet weak var selectionBox3: UIImageView!
 
     //var secondCardString:String = String(format: "Card%i", secondRandomNumber)
     var forcaRand:Int = 70 + Int(arc4random_uniform(30))
@@ -70,12 +73,24 @@ class EscolhaAtributos: UIViewController {
     @IBAction func forcaButton(sender: AnyObject) {
     
         selecionarTime.forcaCarta = forcaRand;
+        selectionBox1.hidden = false
+//        if (selectionBox2.hidden || selectionBox3.hidden == false){
+//            selectionBox1.hidden = true
+//        }
+        selectionBox2.hidden = true
+        selectionBox3.hidden = true
         
     }
     
     @IBAction func velocidadeButton(sender: AnyObject) {
     
         selecionarTime.forcaCarta = velocidadeRand
+        selectionBox2.hidden = false
+//        if (selectionBox1.hidden || selectionBox3.hidden == false){
+//            selectionBox2.hidden = true
+//        }
+        selectionBox1.hidden = true
+        selectionBox3.hidden = true
 
     }
     
@@ -83,7 +98,12 @@ class EscolhaAtributos: UIViewController {
     @IBAction func overrallButton(sender: AnyObject) {
     
         selecionarTime.forcaCarta = (velocidadeRand + forcaRand) / 2
-    
+        selectionBox3.hidden = false
+//        if (selectionBox2.hidden || selectionBox1.hidden == false){
+//            selectionBox3.hidden = true
+//        }
+        selectionBox1.hidden = true
+        selectionBox2.hidden = true
     }
     
 }
