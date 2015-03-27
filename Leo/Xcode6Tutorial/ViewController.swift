@@ -25,22 +25,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewFinal: UIView!
     @IBOutlet weak var notaJogarNovamente: UIView!
     
-<<<<<<< HEAD
     @IBOutlet weak var viewParaAtributos: UIView!
     
     @IBOutlet weak var forcaUm: UILabel!
     @IBOutlet weak var forcaDois: UILabel!
-=======
     @IBOutlet weak var powerOne: UILabel!
     @IBOutlet weak var powerTwo: UILabel!
->>>>>>> origin/master
     
     var cardNamesArray:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
+    var cardNamesArrayAi:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
                // Do any additional setup after loading the view, typically from a nib.
+        
+        NSLog("Deu Load!")
         
         self.PlayerScore.text = String(selecionarTime.playerScoreTotal)
 
@@ -62,8 +63,9 @@ class ViewController: UIViewController {
         
         else if(selecionarTime.timeEscolha == 2) {
             // Santos
-            
-            var cardNamesArray:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
+            NSLog("Santos")
+           /* var cardNamesArray:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]*/
+             var cardNamesArray:[String] = ["Deck2", "San1", "San2", "San3", "San4", "San5", "San6", "San7", "San8", "San9", "San10", "San11", "San13", "San14"]
         }
         else if(selecionarTime.timeEscolha == 3) {
             // 
@@ -71,6 +73,29 @@ class ViewController: UIViewController {
             var cardNamesArray:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
         }
         
+        
+        if(selecionarTime.timeAi == 0) {
+            //Corinthians
+            var cardNamesArrayAI:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
+        }
+            
+        else if(selecionarTime.timeAi == 1) {
+            //Sao Paulo
+            
+            var cardNamesArrayAI:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
+        }
+            
+        else if(selecionarTime.timeAi == 2) {
+            // Santos
+            
+            /* var cardNamesArray:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]*/
+            var cardNamesArrayAI:[String] = ["Deck2", "San1", "San2", "San3", "San4", "San5", "San6", "San7", "San8", "San9", "San10", "San11", "San13", "San14"]
+        }
+        else if(selecionarTime.timeAi == 3) {
+            //
+            
+            var cardNamesArrayAI:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
+        }
         
         //self.playRoundButton.setTitle("Play", forState: UIControlState.Normal)
     
@@ -113,7 +138,7 @@ class ViewController: UIViewController {
         //var secondCardString:String = String(format: "Card%i", secondRandomNumber)
         
         //acessa cartas por array
-        var secondCardString:String = self.cardNamesArray [secondRandomNumber]
+        var secondCardString:String = self.cardNamesArrayAi [secondRandomNumber]
         
         // Seta secondCardView com numero correspondente
         self.secondCardImageView.image = UIImage (named: secondCardString)

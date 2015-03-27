@@ -15,6 +15,7 @@ struct selecionarTime {
     static var enemyScoreTotal = 0;
     static var forcaCarta = 0;
     static var nomeJogador = ""
+    static var timeAi = 0
 }
 
 
@@ -33,6 +34,10 @@ class SelecaoTimes: UIViewController {
          selecionarTime.enemyScoreTotal = 0;
          selecionarTime.forcaCarta = 0;
          selecionarTime.nomeJogador = ""
+        
+        var secondRandomNumber:Int = Int (arc4random_uniform(3))
+        
+        selecionarTime.timeAi = secondRandomNumber
     }
     
     var timesMenu:[String] = ["Cor", "SP", "San", "Pal"]
