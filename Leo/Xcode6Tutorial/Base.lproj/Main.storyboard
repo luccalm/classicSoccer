@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tela Inicial-->
         <scene sceneID="vBJ-bQ-B64">
             <objects>
-                <viewController id="2jq-QE-OVd" sceneMemberID="viewController">
+                <viewController id="2jq-QE-OVd" customClass="TelaInicial" customModule="Xcode6Tutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6f7-Vn-jYp"/>
                         <viewControllerLayoutGuide type="bottom" id="rxa-ha-vJJ"/>
@@ -293,6 +293,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="buttonGoSound:" destination="JZm-B5-7R3" eventType="touchUpInside" id="VJu-iV-Gsa"/>
                                     <segue destination="PiU-7C-T5o" kind="show" id="yES-YP-3Tn"/>
                                 </connections>
                             </button>
@@ -387,6 +388,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="buttonGoSound" destination="LiJ-qY-Dby" id="1Rv-I9-VDn"/>
                         <outlet property="ciqueDireita" destination="jOX-uj-SEQ" id="Cfd-ui-re3"/>
                         <outlet property="nomeTimes" destination="VqR-ig-MzI" id="rj8-fp-Jsd"/>
                         <outlet property="timesAEscolher" destination="9dc-VY-0Pf" id="Z4O-gp-LHn"/>
@@ -1540,7 +1542,7 @@
         <image name="yesbutton" width="76" height="73"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KHt-uJ-TZI"/>
+        <segue reference="UIj-GQ-Fp1"/>
         <segue reference="yES-YP-3Tn"/>
     </inferredMetricsTieBreakers>
 </document>

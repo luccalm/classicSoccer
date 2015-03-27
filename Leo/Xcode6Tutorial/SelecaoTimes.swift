@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 
 struct selecionarTime {
@@ -20,13 +21,23 @@ struct selecionarTime {
 
 
 
+
 class SelecaoTimes: UIViewController {
     @IBOutlet weak var ciqueDireita: UIButton!
     @IBOutlet weak var timesAEscolher: UIImageView!
     @IBOutlet weak var nomeTimes: UILabel!
     
+    @IBOutlet weak var buttonGoSound: UIButton!
+    //*****   SOM   *****
+    var buttonAudioURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("selectionSound", ofType: "wav")!)
+    var buttonAudioPlayer = AVAudioPlayer()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //*****   SOM   *****
+        buttonAudioPlayer = AVAudioPlayer(contentsOfURL: buttonAudioURL, error: nil)
         
         NSLog("DidLoad Selecao")
          selecionarTime.timeEscolha = 0
@@ -89,6 +100,12 @@ class SelecaoTimes: UIViewController {
         print(selecionarTime.timeEscolha)
         
     }
+    
+    @IBAction func buttonGoSound(sender: AnyObject) {
+        buttonAudioPlayer.play()
+        
+    }
+    
             
 }
 

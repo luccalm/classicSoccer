@@ -26,16 +26,19 @@ class EscolhaAtributos: UIViewController {
     var forcaRand:Int = 70 + Int(arc4random_uniform(30))
     var velocidadeRand:Int = 70 + Int(arc4random_uniform(30))
     
-    //*****SOM*****
-    var buttonAudioURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("selectionSound", ofType: "wav")!)
-    var buttonAudioPlayer = AVAudioPlayer()
+    //*****   SOM   *****
+//    var buttonAudioURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("selectionSound", ofType: "wav")!)
+//    var buttonAudioPlayer = AVAudioPlayer()
+    var buttonAudioPlayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("selectionSound", ofType: "wav")!), error: nil)
+    
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //*****SOM*****
-        buttonAudioPlayer = AVAudioPlayer(contentsOfURL: buttonAudioURL, error: nil)
+        //*****   SOM   *****
+//        buttonAudioPlayer = AVAudioPlayer(contentsOfURL: buttonAudioURL, error: nil)
 
         var overrallRand = (forcaRand + velocidadeRand) / 2
         selecionarTime.forcaCarta = 0

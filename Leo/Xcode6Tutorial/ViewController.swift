@@ -36,6 +36,9 @@ class ViewController: UIViewController {
     var cardNamesArray:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
     var cardNamesArrayAi:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
     
+    //** SOM
+    //var gol = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("gol", ofType: "wav")!), error: nil)
+    //var apitoJuiz = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("apitoJuiz", ofType: "wav")!), error: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +47,7 @@ class ViewController: UIViewController {
         
         NSLog("Deu Load!")
         
-        //Teste SOM
+        //apitoJuiz.play()
         
         
         self.PlayerScore.text = String(selecionarTime.playerScoreTotal)
@@ -114,6 +117,7 @@ class ViewController: UIViewController {
     
     @IBAction func playRoundTapped(sender: UIButton) {
         
+        //gol.play()
         
         // randomize um numero para o firstImageView
         var firstRandomNumber:Int = Int(arc4random_uniform(13))
@@ -168,6 +172,7 @@ class ViewController: UIViewController {
         {
             
             NSLog("TesteEnemy")
+            //apitoJuiz.play()
             timeVencedor.text = "O time adversário ganhou!"
             viewFinal.hidden = false
             notaJogarNovamente.hidden = false
@@ -177,6 +182,7 @@ class ViewController: UIViewController {
         else if(selecionarTime.playerScoreTotal == 3){
             
             NSLog("TesteScorePlayer")
+            //apitoJuiz.play()
             timeVencedor.text = "Você ganhou!"
             viewFinal.hidden = false
             notaJogarNovamente.hidden = false
