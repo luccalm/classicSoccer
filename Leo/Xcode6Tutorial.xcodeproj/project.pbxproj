@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E27AA3071AC5831C00709CE9 /* selectionSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = E27AA3061AC5831C00709CE9 /* selectionSound.wav */; };
+		E27AA30A1AC5918700709CE9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E27AA3091AC5918700709CE9 /* AVFoundation.framework */; };
 		E27CDB6C1AC35B0C0075DC97 /* SelecaoTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27CDB6B1AC35B0C0075DC97 /* SelecaoTimes.swift */; };
 		E2C941351AC11CCE009027B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C941341AC11CCE009027B8 /* AppDelegate.swift */; };
 		E2C941371AC11CCE009027B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C941361AC11CCE009027B8 /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E27AA3061AC5831C00709CE9 /* selectionSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = selectionSound.wav; path = ../selectionSound.wav; sourceTree = "<group>"; };
+		E27AA3091AC5918700709CE9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E27CDB6B1AC35B0C0075DC97 /* SelecaoTimes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelecaoTimes.swift; sourceTree = "<group>"; };
 		E2C9412F1AC11CCE009027B8 /* Xcode6Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xcode6Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C941331AC11CCE009027B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27AA30A1AC5918700709CE9 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +65,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E27AA3081AC5908100709CE9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E27AA3061AC5831C00709CE9 /* selectionSound.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		E2C941261AC11CCE009027B8 = {
 			isa = PBXGroup;
 			children = (
+				E27AA3091AC5918700709CE9 /* AVFoundation.framework */,
 				E2C941311AC11CCE009027B8 /* Xcode6Tutorial */,
 				E2C941471AC11CCE009027B8 /* Xcode6TutorialTests */,
 				E2C941301AC11CCE009027B8 /* Products */,
@@ -113,6 +127,7 @@
 		E2C941481AC11CCE009027B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E27AA3081AC5908100709CE9 /* Sounds */,
 				E2C941491AC11CCE009027B8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -199,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2C9413A1AC11CCE009027B8 /* Main.storyboard in Resources */,
+				E27AA3071AC5831C00709CE9 /* selectionSound.wav in Resources */,
 				E2C9413F1AC11CCE009027B8 /* LaunchScreen.xib in Resources */,
 				E2C9413C1AC11CCE009027B8 /* Images.xcassets in Resources */,
 			);

@@ -8,6 +8,7 @@
 
 import UIKit
 import Darwin
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -42,6 +43,9 @@ class ViewController: UIViewController {
                // Do any additional setup after loading the view, typically from a nib.
         
         NSLog("Deu Load!")
+        
+        //Teste SOM
+        
         
         self.PlayerScore.text = String(selecionarTime.playerScoreTotal)
 
@@ -101,6 +105,8 @@ class ViewController: UIViewController {
     
 
     }
+    
+    
     
     @IBAction func botaoSair(sender: AnyObject) {
         exit(0);

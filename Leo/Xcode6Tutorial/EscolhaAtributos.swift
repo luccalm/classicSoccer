@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class EscolhaAtributos: UIViewController {
 
@@ -25,8 +26,16 @@ class EscolhaAtributos: UIViewController {
     var forcaRand:Int = 70 + Int(arc4random_uniform(30))
     var velocidadeRand:Int = 70 + Int(arc4random_uniform(30))
     
+    //*****SOM*****
+    var buttonAudioURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("selectionSound", ofType: "wav")!)
+    var buttonAudioPlayer = AVAudioPlayer()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //*****SOM*****
+        buttonAudioPlayer = AVAudioPlayer(contentsOfURL: buttonAudioURL, error: nil)
 
         var overrallRand = (forcaRand + velocidadeRand) / 2
         selecionarTime.forcaCarta = 0
@@ -64,11 +73,12 @@ class EscolhaAtributos: UIViewController {
            // var cardNamesArray:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
         //}
         
-
+        
         
     }
+    
 
-
+    
     
     @IBAction func forcaButton(sender: AnyObject) {
     
@@ -79,6 +89,7 @@ class EscolhaAtributos: UIViewController {
 //        }
         selectionBox2.hidden = true
         selectionBox3.hidden = true
+        buttonAudioPlayer.play()
         
     }
     
@@ -91,7 +102,7 @@ class EscolhaAtributos: UIViewController {
 //        }
         selectionBox1.hidden = true
         selectionBox3.hidden = true
-
+        buttonAudioPlayer.play()
     }
     
     
@@ -104,6 +115,7 @@ class EscolhaAtributos: UIViewController {
 //        }
         selectionBox1.hidden = true
         selectionBox2.hidden = true
+        buttonAudioPlayer.play()
     }
     
 }
