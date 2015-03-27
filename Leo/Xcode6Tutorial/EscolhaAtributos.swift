@@ -30,7 +30,8 @@ class EscolhaAtributos: UIViewController {
 //    var buttonAudioURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("selectionSound", ofType: "wav")!)
 //    var buttonAudioPlayer = AVAudioPlayer()
     var buttonAudioPlayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("selectionSound", ofType: "wav")!), error: nil)
-    
+   // var apitoJuiz = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("apitoJuiz", ofType: "wav")!), error: nil)
+   
     
 
     
@@ -40,6 +41,7 @@ class EscolhaAtributos: UIViewController {
         //*****   SOM   *****
 //        buttonAudioPlayer = AVAudioPlayer(contentsOfURL: buttonAudioURL, error: nil)
 
+        //apitoJuiz.play()
         var overrallRand = (forcaRand + velocidadeRand) / 2
         selecionarTime.forcaCarta = 0
 

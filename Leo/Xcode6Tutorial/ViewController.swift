@@ -10,8 +10,9 @@ import UIKit
 import Darwin
 import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVAudioPlayerDelegate {
     
+
 
     //@IBOutlet weak var setaDireita: UIButton!
     @IBOutlet weak var botaoSair: UIButton!
@@ -33,15 +34,49 @@ class ViewController: UIViewController {
     @IBOutlet weak var powerOne: UILabel!
     @IBOutlet weak var powerTwo: UILabel!
     
+    var buttonBeep = AVAudioPlayer()
+    //var arquivo = "apitoJuiz"
+    var avPlayer: AVAudioPlayer?
+    var error: NSError?
+    
     var cardNamesArray:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
     var cardNamesArrayAi:[String] = ["Card1Cassio", "Card2FabioSantos", "Card3Fagner", "Card4Gil", "Card5Felipe", "Card6Elias", "Card7Ralf", "Card8Jadson", "Card9RenatoAugusto", "Card10VagnerLove", "Card11Malcom", "Card12Emerson", "Card13Danilo", "Card14Guerrero"]
-    
+    //var buttonAudioPlayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("backGround", ofType: "wav")!), error: nil)
+    var buttonAudioPlayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("backGround", ofType: "wav")!), error: nil)
+    var apito = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("apitoJuiz", ofType: "wav")!), error: nil)
+    var gol = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("gol", ofType: "wav")!), error: nil)
     //** SOM
-    //var gol = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("gol", ofType: "wav")!), error: nil)
+   // var gol = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("gol", ofType: "wav")!), error: nil)
     //var apitoJuiz = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("apitoJuiz", ofType: "wav")!), error: nil)
+    
+    /*func playChime() -> Void {
+        let fileURL: NSURL! = NSBundle.mainBundle().URLForResource("backGround", withExtension: "wav")
+        self.avPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+        self.avPlayer?.play()
+    }*/
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
+        //playChime()
+        
+        buttonAudioPlayer.numberOfLoops = -1
+        gol.numberOfLoops = -1
+        
+        if(selecionarTime.musica == 0) {
+        buttonAudioPlayer.play()
+            gol.play()
+            selecionarTime.musica = 1
+            apito.play()
+
+        }
+
+        
+        //uttonAudioPlayer.play()
+        
+        //golOk = AVAudioPlayer(contentsOfURL: gol, error: nil)
         
                // Do any additional setup after loading the view, typically from a nib.
         
@@ -117,7 +152,7 @@ class ViewController: UIViewController {
     
     @IBAction func playRoundTapped(sender: UIButton) {
         
-        //gol.play()
+        //golOk.play()
         
         // randomize um numero para o firstImageView
         var firstRandomNumber:Int = Int(arc4random_uniform(13))
@@ -157,7 +192,9 @@ class ViewController: UIViewController {
         if selecionarTime.forcaCarta > secondForca {
             selecionarTime.playerScoreTotal += 1
             self.PlayerScore.text = String(selecionarTime.playerScoreTotal)
-            
+            //golOk.play()
+
+
             
         }
         else if selecionarTime.forcaCarta == secondForca {
@@ -168,7 +205,7 @@ class ViewController: UIViewController {
             self.EnemyScore.text = String (selecionarTime.enemyScoreTotal)
             
         }
-        if(selecionarTime.enemyScoreTotal == 3)
+        if(selecionarTime.enemyScoreTotal == 5)
         {
             
             NSLog("TesteEnemy")
@@ -177,9 +214,11 @@ class ViewController: UIViewController {
             viewFinal.hidden = false
             notaJogarNovamente.hidden = false
             viewParaAtributos.hidden = true
+            apito.play()
+
         }
         
-        else if(selecionarTime.playerScoreTotal == 3){
+        else if(selecionarTime.playerScoreTotal == 5){
             
             NSLog("TesteScorePlayer")
             //apitoJuiz.play()
@@ -187,10 +226,12 @@ class ViewController: UIViewController {
             viewFinal.hidden = false
             notaJogarNovamente.hidden = false
             viewParaAtributos.hidden = true
+            apito.play()
+
         }
         else {
         viewParaAtributos.hidden = false
-        
+
         }
     }
 

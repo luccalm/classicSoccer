@@ -746,7 +746,7 @@
                                             <constraint firstAttribute="width" constant="200" id="4Xn-9U-lJF"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" red="0.34509804840000002" green="0.078431375319999996" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
                                         <size key="shadowOffset" width="3" height="-2"/>
@@ -767,7 +767,7 @@
                                             <constraint firstAttribute="width" constant="200" id="ac2-Fj-J2b"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" red="0.34509804840000002" green="0.078431375319999996" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
                                         <size key="shadowOffset" width="3" height="-2"/>
@@ -1101,7 +1101,7 @@
                             </imageView>
                             <view alpha="0.29999999999999966" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ro5-2N-Y4t">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="400" id="KIv-LQ-0aI">
                                         <variation key="widthClass=compact" constant="600"/>
@@ -1227,7 +1227,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="3" height="3"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -1255,7 +1255,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="3" height="3"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -1279,7 +1279,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="3" height="3"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -1536,7 +1536,7 @@
         <image name="Trofeu" width="666" height="1333"/>
         <image name="X" width="41" height="78"/>
         <image name="backGround" width="164" height="113"/>
-        <image name="ifutCampo" width="341" height="256"/>
+        <image name="ifutCampo" width="444" height="250"/>
         <image name="nobutton" width="62" height="69"/>
         <image name="selectionBox" width="170" height="170"/>
         <image name="yesbutton" width="76" height="73"/>

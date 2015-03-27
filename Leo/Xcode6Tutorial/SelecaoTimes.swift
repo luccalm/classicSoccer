@@ -17,6 +17,8 @@ struct selecionarTime {
     static var forcaCarta = 0;
     static var nomeJogador = ""
     static var timeAi = 0
+    static var musica = 0
+    static var cardNamesArray = []
 }
 
 
