@@ -18,7 +18,10 @@ struct selecionarTime {
     static var nomeJogador = ""
     static var timeAi = 0
     static var musica = 0
-    static var cardNamesArray = []
+    //var cardNamesArray: [Setting] = [Setting]()
+    static var cardNamesArray = [String]()
+    static var cardNamesArrayAi = [String] ()
+
 }
 
 
